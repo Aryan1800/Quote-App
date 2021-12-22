@@ -7,26 +7,42 @@
     tools:context=".MainActivity2"
     android:background="#B0FFC107">
 
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:id="@+id/desc_img"
-        android:src="@drawable/ic_launcher_background"
-        android:layout_marginTop="55dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"/>
 
-   <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:id="@+id/desc_header"
-       android:text="Dummy Text"
-       android:textStyle="bold"
-       android:textSize="25sp"
-       android:layout_below="@+id/desc_img"
-       android:layout_marginStart="100dp"
-       android:layout_marginEnd="100dp"
-       android:layout_marginTop="10dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/desc_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginEnd="100dp"
+                android:src="@drawable/ic_launcher_background" />
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/desc_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="100dp"
+        android:text="Dummy Text"
+        android:textColor="#54E34F"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/desc_desc"
@@ -35,8 +51,12 @@
         android:layout_below="@+id/desc_header"
         android:layout_marginStart="100dp"
         android:layout_marginTop="100dp"
+        android:textColor="@color/white"
         android:text="Dummy Text"
         android:textSize="20sp"
         android:textStyle="bold" />
+
+
+
 
 </RelativeLayout>

@@ -54,6 +54,45 @@ public class myadapter extends RecyclerView.Adapter<myviewholder>
             }
         });
 
+
+
+        holder.t1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent= new Intent(context,MainActivity2.class);
+                intent.putExtra("imagename",temp.getImagename());
+                intent.putExtra("header",temp.getHeader());
+                intent.putExtra("desc",temp.getDesc());
+
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+
+            }
+        });
+
+
+
+        holder.t2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent= new Intent(context,MainActivity2.class);
+                intent.putExtra("imagename",temp.getImagename());
+                intent.putExtra("header",temp.getHeader());
+                intent.putExtra("desc",temp.getDesc());
+
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+
+            }
+        });
+
+
+
+
+
+
     }
 
     @Override

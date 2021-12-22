@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
         Model ob3 = new Model();
         ob3.setHeader("Elon Musk");
-        ob3.setDesc("\"I think it is possible for ordinary to choose to be extraordinary\"");
+        ob3.setDesc("\"I think it is possible for ordinary people to choose to be extraordinary\"");
         ob3.setImagename(R.drawable.elon);
         holder.add(ob3);
 
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
         Model ob5 = new Model();
         ob5.setHeader("MS Dhoni");
-        ob5.setDesc("\"I have always believed taht process is more important than results\"");
+        ob5.setDesc("\"I have always believed that process is more important than results\"");
         ob5.setImagename(R.drawable.dhoni);
         holder.add(ob5);
 
